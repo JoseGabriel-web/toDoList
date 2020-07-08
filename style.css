@@ -1,0 +1,108 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+}
+
+body{
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #FFE53B;
+  background-image: linear-gradient(120deg, #FFE53B 0%, #FF2525 74%);
+  
+}
+
+.container{
+  position: relative;
+  background-color: aliceblue;
+  height: 90vh;
+  width: 400px;
+  max-width: 80%;
+  display: flex;
+  flex-direction: column;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
+
+.img-todo{
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+  height: 200px;
+  object-fit: cover;
+}
+
+.inputAndButton{
+  margin: 1rem;
+  text-align: center;
+}
+
+.inputAndButton button, input{
+  font-size: 1.5rem;
+}
+
+.fa-plus-circle{
+  font-size: 1.5rem;
+  pointer-events: all;
+  cursor: pointer;
+}
+
+.list-container{
+  height: 100%;
+  width: 100%;
+  padding: 1rem;
+  overflow: scroll;
+}
+
+
+
+.sub-container {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  margin-top: 0.5rem;
+}
+
+.list-p{
+  position: relative;
+  display: inline-block;
+  width: 90%;
+  font-size: 1.5rem;
+  /*overflow: scroll;*/
+}
+
+.fa-trash-alt{
+font-size: 1.1rem;
+margin-right: 0.5rem;
+margin-left: auto;
+cursor: pointer;
+}
+.fa-check{
+font-size: 1.1rem;
+}
+
+.trash-text{
+display: none;
+}
+
+.trash-container{
+  display: none;
+}
+
+.line p{
+  position: relative;
+  display: inline-block;
+  width: 90%;
+  text-decoration: line-through;
+}
+
+/*media querys*/
+@media (max-width: 768px){ 
+  .inputAndButton input{
+    width: 75%;
+   }
+  }
